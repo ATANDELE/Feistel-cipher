@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Glody KHALIFA DAWILI
+ * @author pierre atandele
  */
 public class Securite_informatique {
 
@@ -41,10 +41,10 @@ public class Securite_informatique {
         // lire les élèment de la clé K
         //
         int tabkey[] = new int[8];
-        Scanner KGB = new Scanner(System.in);
+        Scanner ABP = new Scanner(System.in);
         for (int i = 0; i < 8; i++) {
             System.out.print("saisissez le bit de position " + i + ":");
-            tabkey[i] = KGB.nextInt();
+            tabkey[i] = ABP.nextInt();
         }
         //
 
@@ -59,7 +59,7 @@ public class Securite_informatique {
         System.out.println("");
         for (int j = 0; j < 8; j++) {
             System.out.print("saisissez la valeur de la fonction position " + j + ":");
-            tabfonction[j] = KGB.nextInt();
+            tabfonction[j] = ABP.nextInt();
         }
         //
 
@@ -162,10 +162,10 @@ public class Securite_informatique {
         // lire les élèments de bloc N de 8 bits
         //
         int blocN[] = new int[8];
-        Scanner KGBA = new Scanner(System.in);
+        Scanner ABPA = new Scanner(System.in);
         for (int k = 0; k < 8; k++) {
             System.out.print("saisissez le bit de N  " + k + " ème position:");
-            blocN[k] = KGBA.nextInt();
+            blocN[k] = ABPA.nextInt();
             //    
         }
         //Affichage des données de bloc N 
@@ -180,7 +180,7 @@ public class Securite_informatique {
         System.out.println("");
         for (int l = 0; l < 8; l++) {
             System.out.print("saisissez la valeur de la fonction PI  " + l + " ème position:");
-            tabfctPI[l] = KGBA.nextInt();
+            tabfctPI[l] = ABPA.nextInt();
         }
         //Affichage de données de la fonction de permutation PI
         //
